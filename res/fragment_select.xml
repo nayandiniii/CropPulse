@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelectFragment"
+    android:background="@drawable/backk">
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logs"/>
+
+
+    <ImageButton
+        android:id="@+id/mountains"
+        android:layout_width="366dp"
+        android:layout_height="76dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650px"
+        android:src="@drawable/khz22" />
+
+    <ImageButton
+        android:layout_width="354dp"
+        android:layout_height="76dp"
+        android:src="@drawable/khz1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1000px"
+        android:id="@+id/beach"/>
+</RelativeLayout>

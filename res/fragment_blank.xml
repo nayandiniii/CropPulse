@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BeachFragment"
+    android:background="@color/white">
+
+    <!-- Image at the top of the page -->
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/text_logo"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_image">
+
+        <!-- Use GridLayout to align the cards -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:layout_marginTop="100px"
+            android:columnCount="2"
+            android:padding="30dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center">
+
+            <!-- Card "one" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="400px"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                app:cardElevation="20dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach1"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "two" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                android:layout_height="400px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach2"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "three" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                android:layout_height="400px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach3"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "four" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="400px"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach4"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "five" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="400px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach5"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "six" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="400px"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach6"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card "seven" -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="400px"
+                android:layout_marginTop="70px"
+                android:layout_marginRight="20px"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach7"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

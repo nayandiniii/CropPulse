@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutFragment"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logs"/>
+
+    <ScrollView
+        android:layout_marginTop="300px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-500px">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_marginTop="18px"
+                android:layout_marginLeft="250px"
+                android:layout_width="wrap_content"
+                android:textSize="34dp"
+                android:fontFamily="@font/helios"
+                android:layout_height="100px"
+                android:text="About Us"
+                android:textColor="@color/lavender"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="24dp"
+                    android:background="@color/lavender">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Hope Foundation is dedicated to promoting the protection of street-dwelling and slum-connected children in Kolkata, some of the most underprivileged in India, as well as their families and communities. HOPE works to effect immediate and lasting change in their lives."
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="50px"
+                android:textSize="12dp"
+                android:fontFamily="@font/helios"
+                android:layout_marginBottom="12px"
+                android:text="Your personalised planner for every trip !"
+                android:textColor="@color/lavender"/>
+
+            <ImageView
+                android:layout_marginTop="-300px"
+                android:layout_width="1200px"
+                android:layout_height="1200px"
+                android:src="@drawable/join"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="-150px"
+                android:textSize="12dp"
+                android:fontFamily="@font/helios"
+                android:layout_marginBottom="12px"
+                android:text="Never be afraid to travel solo"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_marginTop="-300px"
+                android:layout_width="wrap_content"
+                android:layout_height="1200px"
+                android:src="@drawable/beach1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="-150px"
+                android:textSize="12dp"
+                android:fontFamily="@font/helios"
+                android:layout_marginBottom="12px"
+                android:text="Join Odyssey Today and live an experience like never before"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_marginTop="-300px"
+                android:layout_width="match_parent"
+                android:layout_height="1200px"
+                android:src="@drawable/beach2"/>
+            <ImageView
+                android:layout_marginTop="-300px"
+                android:layout_width="match_parent"
+                android:layout_height="1200px"
+                android:src="@drawable/beach3"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:background="@color/texteal"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="Odyssey @Nandini 2247153"/>
+
+</RelativeLayout>

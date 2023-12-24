@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Type of Activity (Use Radio Buttons) -->
+    <RadioGroup
+        android:id="@+id/activityTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"/>
+
+        <RadioButton
+            android:id="@+id/radioOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Distribution"/>
+
+        <!-- Add more radio buttons for different activity types -->
+
+    </RadioGroup>
+
+    <!-- Date Picker -->
+    <EditText
+        android:id="@+id/datePickerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityTypeRadioGroup"
+        android:hint="Select Date"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <!-- Time Picker -->
+    <EditText
+        android:id="@+id/timePickerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePickerEditText"
+        android:hint="Select Time"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <!-- Checkboxes for Additional Options -->
+    <CheckBox
+        android:id="@+id/checkboxOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerEditText"
+        android:text="Bangalore"/>
+
+    <CheckBox
+        android:id="@+id/checkboxOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxOption1"
+        android:text="Others"/>
+
+    <!-- Add more checkboxes for additional options -->
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxOption2"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+
+</RelativeLayout>
