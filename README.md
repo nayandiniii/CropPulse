@@ -24,8 +24,8 @@ In the context of increasing environmental concerns and global food security cha
 - **Sensors:** LDRs, Soil Moisture Sensors, Cameras
 - **Wireless Communication:** Wi-Fi, LoRa
 - **Data Aggregation:** Raspberry Pi
-- **Cloud Platforms:** [Specify Cloud Platform]
-- **Web/Mobile Development:** [Specify Technologies]
+- **Cloud Platforms:** AWS Cloud
+- **Web/Mobile Development:** JAVA , XML
 
 
 ![Screenshot 2023-12-08 185629](https://github.com/nayandiniii/CropPulse/assets/115989171/7064d76b-27db-4a8f-8308-6d04a5bf5205)
